@@ -118,6 +118,7 @@
 
         .hero-content {
             max-width: 1200px;
+            width: 100%;
             display: flex;
             align-items: center;
             gap: 4rem;
@@ -177,7 +178,7 @@
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-size: clamp(2rem, 6vw, 4rem);
             font-weight: 900;
             line-height: 1.1;
             margin-bottom: 1.5rem;
@@ -695,6 +696,17 @@
         }
 
         /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 968px) {
+            .hero-content {
+                gap: 2rem;
+            }
+
+            .hero-image-wrapper {
+                width: 220px;
+                height: 220px;
+            }
+        }
+
         @media (max-width: 768px) {
             nav .container {
                 flex-direction: column;
@@ -705,21 +717,69 @@
                 gap: 1rem;
             }
 
-            .projects-grid {
-                grid-template-columns: 1fr;
+            .hero {
+                padding: 2rem 1rem;
+            }
+
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .hero-image-wrapper {
+                width: 200px;
+                height: 200px;
+            }
+
+            .hero-description {
+                margin-left: auto;
+                margin-right: auto;
             }
 
             .cta-buttons {
-                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
             }
 
             .contact-links {
                 flex-direction: column;
             }
+        }
 
-            .details-image {
-                height: 300px;
-                font-size: 4rem;
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .hero-image-wrapper {
+                width: 180px;
+                height: 180px;
             }
         }
 
