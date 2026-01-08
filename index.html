@@ -217,55 +217,6 @@
             font-size: 1.1rem;
         }
 
-        /* ========== ABOUT SECTION ========== */
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-text h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--accent);
-        }
-
-        .about-text p {
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .stat-card {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--accent);
-            display: block;
-        }
-
-        .stat-label {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
         /* ========== SKILLS SECTION ========== */
         .skills-grid {
             display: grid;
@@ -545,47 +496,191 @@
         </div>
     </section>
 
-    <!-- ========== ABOUT SECTION ========== -->
-    <section id="about">
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" style="padding-top: 3rem;">
         <div class="section-header fade-in">
-            <div class="section-tag">About Me</div>
-            <h2 class="section-title">Building the Future of Mobile</h2>
+            <div class="section-tag">Portfolio</div>
+            <h2 class="section-title">Featured Projects</h2>
             <p class="section-description">
-                Passionate about creating high-performance Android applications that make a difference
+                A showcase of my recent work in Android development
             </p>
         </div>
 
-        <div class="about-content fade-in">
-            <div class="about-text">
-                <h3>Hey there! 👋</h3>
-                <p>
-                    I'm a Senior Android Engineer with extensive experience in building scalable, 
-                    high-performance mobile applications. My expertise spans native Android development, 
-                    Kotlin Multiplatform (KMP), and modern architecture patterns.
-                </p>
-                <p>
-                    I believe in writing clean, maintainable code and staying current with the latest 
-                    Android technologies. Whether it's implementing complex UI with Jetpack Compose or 
-                    architecting robust backend integrations, I bring technical excellence to every project.
-                </p>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card fade-in">
+                <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    💰
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Before Pay</h3>
+                    <p class="project-description">
+                        Financial wellness platform enabling Australian workers to access earned wages instantly. 
+                        Built with modern Android architecture and secure banking integrations.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">MVVM</span>
+                        <span class="tag">Retrofit</span>
+                        <span class="tag">Room</span>
+                    </div>
+                    <div class="contribution-section">
+                        <h4 class="contribution-title">My Contribution</h4>
+                        <ul class="contribution-list">
+                            <li>Architected and implemented secure authentication flow with biometric integration</li>
+                            <li>Optimized API response handling reducing load times by 40%</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://www.beforepay.com.au/" target="_blank" class="project-link">View Live</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="stats-grid">
-                <div class="stat-card fade-in">
-                    <span class="stat-number">5+</span>
-                    <span class="stat-label">Years Experience</span>
+            <!-- Project 2 -->
+            <div class="project-card fade-in">
+                <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    📱
                 </div>
-                <div class="stat-card fade-in">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Projects Completed</span>
+                <div class="project-content">
+                    <h3 class="project-title">My Banglalink</h3>
+                    <p class="project-description">
+                        Leading super app in Bangladesh providing telco services, lifestyle features, 
+                        educational courses, and health services to millions of users.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">Kotlin</span>
+                        <span class="tag">Jetpack</span>
+                        <span class="tag">Firebase</span>
+                    </div>
+                    <div class="contribution-section">
+                        <h4 class="contribution-title">My Contribution</h4>
+                        <ul class="contribution-list">
+                            <li>Developed modular feature architecture supporting 15+ integrated services</li>
+                            <li>Implemented real-time notification system with Firebase Cloud Messaging</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.arena.banglalinkmela.app" target="_blank" class="project-link">Play Store</a>
+                    </div>
                 </div>
-                <div class="stat-card fade-in">
-                    <span class="stat-number">1M+</span>
-                    <span class="stat-label">App Downloads</span>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card fade-in">
+                <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    👨‍👩‍👧
                 </div>
-                <div class="stat-card fade-in">
-                    <span class="stat-number">4.8★</span>
-                    <span class="stat-label">Average Rating</span>
+                <div class="project-content">
+                    <h3 class="project-title">The Pinoy Parent</h3>
+                    <p class="project-description">
+                        Cross-platform parenting app helping Filipino parents with child development, 
+                        educational resources, and community support features.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">Firebase</span>
+                        <span class="tag">Provider</span>
+                    </div>
+                    <div class="contribution-section">
+                        <h4 class="contribution-title">My Contribution</h4>
+                        <ul class="contribution-list">
+                            <li>Built offline-first architecture enabling access in low-connectivity areas</li>
+                            <li>Created custom widget library for consistent UI across 50+ screens</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.savethechildren.pinoy_parent" target="_blank" class="project-link">Play Store</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card fade-in">
+                <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    🌳
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Learning Tree</h3>
+                    <p class="project-description">
+                        Educational platform supporting teacher professional development and caregiver learning 
+                        with interactive content and distance learning capabilities.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Education</span>
+                        <span class="tag">API Integration</span>
+                    </div>
+                    <div class="contribution-section">
+                        <h4 class="contribution-title">My Contribution</h4>
+                        <ul class="contribution-list">
+                            <li>Designed and implemented video streaming module with adaptive bitrate</li>
+                            <li>Integrated progress tracking system with local data persistence</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.savethechildren.learning_tree" target="_blank" class="project-link">Play Store</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card fade-in">
+                <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    🏠
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Rent Collector</h3>
+                    <p class="project-description">
+                        Property management app helping landlords track rent collection, tenant information, 
+                        and payment histories with an intuitive interface.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Material Design</span>
+                    </div>
+                    <div class="contribution-section">
+                        <h4 class="contribution-title">My Contribution</h4>
+                        <ul class="contribution-list">
+                            <li>Developed comprehensive CRUD operations with SQLite database management</li>
+                            <li>Created automated rent reminder system with SMS and notification triggers</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.shakil.barivara" target="_blank" class="project-link">Play Store</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card fade-in">
+                <div class="project-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                    🛒
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Hypermart Shopping</h3>
+                    <p class="project-description">
+                        E-commerce platform for grocery shopping with online ordering, 
+                        real-time inventory, and seamless delivery coordination.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">E-commerce</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                    <div class="contribution-section">
+                        <h4 class="contribution-title">My Contribution</h4>
+                        <ul class="contribution-list">
+                            <li>Implemented shopping cart system with real-time price calculations</li>
+                            <li>Built order tracking feature with push notification updates</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.hypermart.mobile" target="_blank" class="project-link">Play Store</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -638,154 +733,6 @@
                 <div class="skill-icon">🚀</div>
                 <div class="skill-name">CI/CD</div>
                 <div class="skill-level">Advanced</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== PROJECTS SECTION ========== -->
-    <section id="projects">
-        <div class="section-header fade-in">
-            <div class="section-tag">Portfolio</div>
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-description">
-                A showcase of my recent work in Android development
-            </p>
-        </div>
-
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card fade-in">
-                <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                    💰
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Before Pay</h3>
-                    <p class="project-description">
-                        Financial wellness platform enabling Australian workers to access earned wages instantly. 
-                        Built with modern Android architecture and secure banking integrations.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Kotlin</span>
-                        <span class="tag">MVVM</span>
-                        <span class="tag">Retrofit</span>
-                        <span class="tag">Room</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://www.beforepay.com.au/" target="_blank" class="project-link">View Live</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card fade-in">
-                <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                    📱
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">My Banglalink</h3>
-                    <p class="project-description">
-                        Leading super app in Bangladesh providing telco services, lifestyle features, 
-                        educational courses, and health services to millions of users.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Android</span>
-                        <span class="tag">Kotlin</span>
-                        <span class="tag">Jetpack</span>
-                        <span class="tag">Firebase</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.arena.banglalinkmela.app" target="_blank" class="project-link">Play Store</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card fade-in">
-                <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                    👨‍👩‍👧
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">The Pinoy Parent</h3>
-                    <p class="project-description">
-                        Cross-platform parenting app helping Filipino parents with child development, 
-                        educational resources, and community support features.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Flutter</span>
-                        <span class="tag">Dart</span>
-                        <span class="tag">Firebase</span>
-                        <span class="tag">Provider</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.savethechildren.pinoy_parent" target="_blank" class="project-link">Play Store</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card fade-in">
-                <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                    🌳
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Learning Tree</h3>
-                    <p class="project-description">
-                        Educational platform supporting teacher professional development and caregiver learning 
-                        with interactive content and distance learning capabilities.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Flutter</span>
-                        <span class="tag">Education</span>
-                        <span class="tag">API Integration</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.savethechildren.learning_tree" target="_blank" class="project-link">Play Store</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-card fade-in">
-                <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                    🏠
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Rent Collector</h3>
-                    <p class="project-description">
-                        Property management app helping landlords track rent collection, tenant information, 
-                        and payment histories with an intuitive interface.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Android</span>
-                        <span class="tag">SQLite</span>
-                        <span class="tag">Material Design</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.shakil.barivara" target="_blank" class="project-link">Play Store</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-card fade-in">
-                <div class="project-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
-                    🛒
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Hypermart Shopping</h3>
-                    <p class="project-description">
-                        E-commerce platform for grocery shopping with online ordering, 
-                        real-time inventory, and seamless delivery coordination.
-                    </p>
-                    <div class="project-tags">
-                        <span class="tag">Android</span>
-                        <span class="tag">E-commerce</span>
-                        <span class="tag">REST API</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.hypermart.mobile" target="_blank" class="project-link">Play Store</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
