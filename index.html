@@ -488,11 +488,10 @@
 
         /* Added new styles for screenshot container */
         .details-screenshots {
-            width: 100%;
-            max-width: 700px;          /* Limits screenshot container */
-            margin-left: auto;         /* Centers the screenshots */
-            margin-right: auto;
-            overflow: hidden;          /* Prevents any overflow */
+            display: flex;              /* Side by side */
+            gap: 1rem;                  /* Small gap between items */
+            justify-content: center;    /* Centered horizontally */
+            align-items: center;        /* Aligned vertically */
         }
         
         .screenshot-item {
@@ -530,10 +529,6 @@
 
         .details-hero {
             margin-bottom: 3rem;
-            width: 100%;
-            max-width: 1000px;        /* Constrains hero section */
-            margin-left: auto;         /* Centers it */
-            margin-right: auto;
         }
 
         .details-image::before {
