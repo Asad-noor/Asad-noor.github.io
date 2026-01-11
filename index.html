@@ -488,22 +488,17 @@
 
         /* Added new styles for screenshot container */
         .details-screenshots {
-            width: 100%;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 2rem;
+            display: flex;              /* Side by side */
+            gap: 1rem;                  /* Small gap between items */
+            justify-content: center;    /* Centered horizontally */
+            align-items: center;        /* Aligned vertically */
         }
         
         .screenshot-item {
-            /* Individual screenshot styling with hover effect */
-            aspect-ratio: 16/9;  /* Maintains consistent size */
-            border-radius: 12px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            width: 200px;               /* Compact width */
+            height: 400px;              /* Phone screen ratio */
+            border: 2px solid var(--border);
+            flex-shrink: 0;             /* Prevents shrinking */
         }
         
         .screenshot-item:hover {
@@ -738,6 +733,25 @@
                 grid-template-columns: 1fr;  /* Stacks on mobile */
                 gap: 1rem;
                 padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .screenshot-item {
+                width: 150px;           /* Smaller on tablets */
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .details-screenshots {
+                flex-direction: column; /* Stacks vertically */
+                align-items: center;
+            }
+            
+            .screenshot-item {
+                width: 180px;          /* Compact mobile size */
+                height: 360px;
             }
         }
 
